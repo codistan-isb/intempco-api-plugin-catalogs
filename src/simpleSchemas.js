@@ -210,6 +210,10 @@ export const CatalogProductOption = new SimpleSchema({
     type: SimpleSchema.Integer,
     label: "The position of this variant among other variants at the same level of the product-variant-option hierarchy"
   },
+  inStock: {
+    type: Boolean,
+    optional: true,
+  },
   "length": {
     type: Number,
     label: "Length",

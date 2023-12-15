@@ -176,6 +176,10 @@ type CatalogProduct implements CatalogProductOrVariant & Node {
 
   "The width of the product, if it has physical dimensions"
   width: Float
+
+   
+  "in stock flag for custom and non-custome item"
+  inStock: Boolean
 }
 
 "A variant of a catalog product"
@@ -250,6 +254,9 @@ type CatalogProductVariant implements CatalogProductOrVariant & Node {
 
   "The width of the product, if it has physical dimensions"
   width: Float
+  
+  "is stock value"
+  isStock:Boolean
 }
 
 """
