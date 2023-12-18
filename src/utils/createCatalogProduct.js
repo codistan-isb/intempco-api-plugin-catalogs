@@ -120,7 +120,8 @@ export async function xformProduct({ context, product, variants }) {
     variants: catalogProductVariants,
     vendor: product.vendor,
     weight: product.weight,
-    width: product.width
+    width: product.width,
+    inStock: product.inStock,
   };
 }
 
