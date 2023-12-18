@@ -138,7 +138,24 @@ export const ImageInfo = new SimpleSchema({
     type: ImageSizes
   }
 });
-
+// docs info
+export const DocInfo = new SimpleSchema({
+  productId: {
+    type: String,
+    label: "Product Id",
+    optional: true,
+  },
+  variantId: {
+    type: String,
+    label: "Variant Id",
+    optional: true,
+  },
+  URL: {
+    type: String,
+    label: "URL",
+    optional: true,
+  },
+})
 /**
  * @name SocialMetadata
  * @memberof Schemas
@@ -229,6 +246,29 @@ export const CatalogProductOption = new SimpleSchema({
   "media.$": {
     type: ImageInfo
   },
+  Features: {
+    type: String,
+    label: "Features",
+    optional: true,
+  },
+  Applications: {
+    type: String,
+    label: "Applications",
+    optional: true,
+  },
+  Docs: {
+    type: Array,
+    label: "Docs",
+    optional: true,
+  },
+  "Docs.$": {
+    type: DocInfo,
+  },
+  inStock: {
+      type: Boolean,
+      label: "In Stock",
+      optional: true,
+  },
   "metafields": {
     type: Array,
     label: "Metafields",
@@ -312,7 +352,16 @@ export const CatalogProductVariant = CatalogProductOption.clone().extend({
   },
   "options.$": {
     type: CatalogProductOption
-  }
+  },
+  inStock: {
+    type: Boolean,
+    optional: true,
+  },
+  partNumber: {
+    type: String,
+    label: "Part Number",
+    optional: true,
+}
 });
 
 /**
@@ -525,7 +574,30 @@ export const CatalogProduct = new SimpleSchema({
     min: 0,
     optional: true,
     defaultValue: 0
-  }
+  },
+  Features: {
+    type: String,
+    label: "Features",
+    optional: true,
+  },
+  Applications: {
+    type: String,
+    label: "Applications",
+    optional: true,
+  },
+  Docs: {
+    type: Array,
+    label: "Docs",
+    optional: true,
+  },
+  "Docs.$": {
+    type: DocInfo,
+  },
+  inStock: {
+      type: Boolean,
+      label: "In Stock",
+      optional: true,
+  },
 });
 
 /**

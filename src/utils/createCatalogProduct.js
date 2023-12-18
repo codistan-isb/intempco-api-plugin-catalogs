@@ -11,7 +11,7 @@ import getCatalogProductMedia from "./getCatalogProductMedia.js";
  */
 export function xformVariant(variant, variantMedia) {
   const primaryImage = variantMedia[0] || null;
-
+console.log("xformVariant",variant);
   return {
     _id: variant._id,
     attributeLabel: variant.attributeLabel,
@@ -33,7 +33,12 @@ export function xformVariant(variant, variantMedia) {
     // The _id prop could change whereas this should always point back to the source variant in Products collection
     variantId: variant._id,
     weight: variant.weight,
-    width: variant.width
+    width: variant.width,
+    inStock: variant.inStock,
+    Features:variant.Features,
+    Applications:variant.Applications,
+    Docs:variant.Docs,
+    partNumber:variant.partNumber,
   };
 }
 
@@ -54,6 +59,7 @@ export async function xformProduct({ context, product, variants }) {
   const options = new Map();
 
   variants.forEach((variant) => {
+    // console.log("variant",variant);
     if (variant.ancestors.length === 2) {
       const parentId = variant.ancestors[1];
       if (options.has(parentId)) {
@@ -122,6 +128,9 @@ export async function xformProduct({ context, product, variants }) {
     weight: product.weight,
     width: product.width,
     inStock: product.inStock,
+    Features:product.Features,
+    Applications:product.Applications,
+    Docs:product.Docs,
   };
 }
 
