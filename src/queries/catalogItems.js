@@ -35,6 +35,6 @@ export default async function catalogItems(context, { searchQuery, shopIds, tagI
       $search: _.escapeRegExp(searchQuery)
     };
   }
-
+console.log("Catalog.find(query)",await Catalog.find(query).toArray());
   return Catalog.find(query);
 }
