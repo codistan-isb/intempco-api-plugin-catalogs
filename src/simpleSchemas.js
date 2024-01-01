@@ -363,6 +363,16 @@ export const CatalogProductVariant = CatalogProductOption.clone().extend({
     label: "Part Number",
     optional: true,
   },
+  shortDescription: {
+    type: String,
+    label: "Short Description",
+    optional: true,
+  },
+  description: {
+    type: String,
+    label: "Description",
+    optional: true,
+  },
   Features: {
     type: String,
     label: "Features",

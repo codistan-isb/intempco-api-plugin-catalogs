@@ -82,6 +82,7 @@ interface CatalogProductOrVariant {
 
   "The width of the product, if it has physical dimensions"
   width: Float
+  
 }
 
 """
@@ -277,6 +278,12 @@ type CatalogProductVariant implements CatalogProductOrVariant & Node {
 
   " partNumber "
   partNumber: String
+  
+"description field for varinat"
+  description: String
+
+  "short description field for varinat"
+  shortDescription: String
 }
 
 type DocInfoPayload {
