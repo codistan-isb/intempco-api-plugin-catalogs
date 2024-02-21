@@ -155,6 +155,11 @@ export const DocInfo = new SimpleSchema({
     label: "URL",
     optional: true,
   },
+  title: {
+    type: String,
+    label: "title",
+    optional: true,
+  },
 });
 /**
  * @name SocialMetadata

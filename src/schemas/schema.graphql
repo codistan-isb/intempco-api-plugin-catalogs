@@ -290,6 +290,7 @@ type DocInfoPayload {
   URL: String
   productId: ID
   variantId: ID
+  title:String
 }
 """
 Catalog items are combined to create a catalog. Each item can represent a different type of content.
