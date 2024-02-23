@@ -233,10 +233,7 @@ export const CatalogProductOption = new SimpleSchema({
     label:
       "The position of this variant among other variants at the same level of the product-variant-option hierarchy",
   },
-  inStock: {
-    type: Boolean,
-    optional: true,
-  },
+
   length: {
     type: Number,
     label: "Length",
@@ -273,6 +270,16 @@ export const CatalogProductOption = new SimpleSchema({
   inStock: {
     type: Boolean,
     label: "In Stock",
+    optional: true,
+  },
+  partNumber: {
+    type: String,
+    label: "Part Number",
+    optional: true,
+  },
+  weightage: {
+    type: Number,
+    label: "weightage",
     optional: true,
   },
   metafields: {
@@ -369,7 +376,7 @@ export const CatalogProductVariant = CatalogProductOption.clone().extend({
     optional: true,
   },
   weightage: {
-    type: Int,
+    type: Number,
     label: "weightage",
     optional: true,
   },
@@ -635,6 +642,16 @@ export const CatalogProduct = new SimpleSchema({
   inStock: {
     type: Boolean,
     label: "In Stock",
+    optional: true,
+  },
+  partNumber: {
+    type: String,
+    label: "Part Number",
+    optional: true,
+  },
+  weightage: {
+    type: Number,
+    label: "weightage",
     optional: true,
   },
 });

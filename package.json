@@ -1,6 +1,6 @@
 {
-  "_from": "@reactioncommerce/api-plugin-catalogs@1.1.10",
-  "_id": "@reactioncommerce/api-plugin-catalogs@1.1.10",
+  "_from": "@reactioncommerce/api-plugin-catalogs@1.1.11",
+  "_id": "@reactioncommerce/api-plugin-catalogs@1.1.11",
   "_inBundle": false,
   "_integrity": "sha512-DgvP2MnvigyxZHC/CqgM3SrBbmZ5+Psvtg1U4sAdFHo5NpkGEBmnSEBcUQUlfou5hUvrEdp7naHSpLoZZzGwnA==",
   "_location": "/@reactioncommerce/api-plugin-catalogs",
@@ -8,7 +8,7 @@
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "@reactioncommerce/api-plugin-catalogs@1.1.10",
+    "raw": "@reactioncommerce/api-plugin-catalogs@1.1.11",
     "name": "@reactioncommerce/api-plugin-catalogs",
     "escapedName": "@reactioncommerce%2fapi-plugin-catalogs",
     "scope": "@reactioncommerce",
@@ -21,7 +21,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@reactioncommerce/api-plugin-catalogs/-/api-plugin-catalogs-1.1.6.tgz",
   "_shasum": "60940d51d1e1db419d83a8e02dfa9eb59810838f",
-  "_spec": "@reactioncommerce/api-plugin-catalogs@1.1.10",
+  "_spec": "@reactioncommerce/api-plugin-catalogs@1.1.11",
   "_where": "/home/awahab1116/check-intempco/reaction-cli",
   "author": {
     "name": "Reaction Commerce",
@@ -112,5 +112,5 @@
   "sideEffects": false,
   "type": "module",
   "url": "https://github.com/reactioncommerce/api-plugin-catalogs",
-  "version": "1.1.10"
+  "version": "1.1.11"
 }
