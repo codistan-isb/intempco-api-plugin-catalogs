@@ -39,6 +39,7 @@ console.log("xformVariant",variant);
     Applications:variant.Applications,
     Docs:variant.Docs,
     partNumber:variant.partNumber,
+    weightage:variant.weightage,
     description:variant.description,
     shortDescription:variant.shortDescription,
   };

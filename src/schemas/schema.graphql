@@ -189,6 +189,11 @@ type CatalogProduct implements CatalogProductOrVariant & Node {
 
   " partNumber "
   partNumber: String
+  
+  # weightage field for varinat"
+  weightage: Int
+
+
 }
 
 "A variant of a catalog product"
@@ -278,6 +283,10 @@ type CatalogProductVariant implements CatalogProductOrVariant & Node {
 
   " partNumber "
   partNumber: String
+  
+  
+  # weightage field for varinat"
+  weightage: Int
   
 "description field for varinat"
   description: String
