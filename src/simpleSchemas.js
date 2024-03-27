@@ -128,6 +128,7 @@ export const ImageInfo = new SimpleSchema({
   productId: {
     type: String,
     label: "Product Id",
+    optional: true,
   },
   variantId: {
     type: String,
